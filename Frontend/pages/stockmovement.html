@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Movement</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Stock Movement History</h2>
+
+<!-- 🔥 FILTER -->
+<select id="productId">
+    <option value="">Select Product</option>
+</select>
+
+<button onclick="loadHistory()">View History</button>
+
+<br><br>
+
+<!-- 🔥 TABLE -->
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product</th>
+            <th>Type</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody id="movementTable"></tbody>
+</table>
+
+<script src="../js/api.js"></script>
+<script src="../js/stockmovement.js"></script>
+
+</body>
+</html>

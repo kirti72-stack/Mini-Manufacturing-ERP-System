@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ERP Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>ERP</h2>
+
+        <ul>
+            <li onclick="goTo('customers')">Customers</li>
+            <li onclick="goTo('products')">Products</li>
+            <li onclick="goTo('sales')">Sales</li>
+            <li onclick="goTo('purchase')">Purchase</li>
+            <li onclick="goTo('supplier')">Supplier</li>
+            <li onclick="goTo('inventory')">Inventory</li>
+            <li onclick="goTo('stockmovement')">Stock Movement</li>
+            <li id="auditMenu" onclick="goTo('audit')">Audit Logs</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Welcome -->
+        <div class="welcome">
+            <h1>Welcome to ERP System</h1>
+            <p>Here's what's happening with your business today.</p>
+        </div>
+
+        <!-- Summary Cards -->
+        <div class="summary-cards">
+
+            <div class="summary-card sales">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <div class="card-info">
+                    <h4>Total Sales</h4>
+                    <h2 id="totalSales">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card purchases">
+                <div class="icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+                <div class="card-info">
+                    <h4>Total Purchases</h4>
+                    <h2 id="totalPurchases">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card products">
+                <div class="icon">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+
+                <div class="card-info">
+                    <h4>Total Products</h4>
+                    <h2 id="totalProducts">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card customers">
+                <div class="icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="card-info">
+                    <h4>Total Customers</h4>
+                    <h2 id="totalCustomers">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card revenue">
+                <div class="icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+
+                <div class="card-info">
+                    <h4>Revenue</h4>
+                    <h2 id="revenue">0</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tables Section -->
+        <div class="table-section">
+
+            <!-- Low Stock -->
+            <div class="table-card">
+
+                <h2>Low Stock Products</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Available Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="lowStockTable"></tbody>
+                </table>
+
+            </div>
+
+            <!-- Top Selling -->
+            <div class="table-card">
+
+                <h2>Top Selling Products</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity Sold</th>
+                            <th>Progress</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="topProductsTable"></tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function goTo(page) {
+    window.location.href = "pages/" + page + ".html";
+}
+
+function logout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("role");
+    localStorage.removeItem("username");
+    window.location.href = "login.html";
+}
+
+</script>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supplier Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Supplier Management</h2>
+
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="email" placeholder="Email">
+<input type="text" id="phone" placeholder="Phone">
+<input type="text" id="company" placeholder="Company">
+<input type="text" id="address" placeholder="Address">
+
+<button id="submitBtn" onclick="addSupplier()">Add Supplier</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Company</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="supplierTable"></tbody>
+</table>
+
+<script src="../js/api.js"></script>
+<script src="../js/supplier.js"></script>
+
+</body>
+</html>

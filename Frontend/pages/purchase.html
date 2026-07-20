@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Purchase Management</h2>
+
+<select id="productId">
+    <option value="">Select Product</option>
+</select>
+
+<select id="supplierId">
+    <option value="">Select Supplier</option>
+</select>
+<input type="number" id="quantity" placeholder="Quantity">
+<input type="number" id="price" placeholder="Price">
+
+<button id="addBtn" onclick="addPurchase()">Add Purchase</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product ID</th>
+            <th>Supplier ID</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="purchaseTable"></tbody>
+</table>
+
+<script src="../js/api.js"></script>
+<script src="../js/purchase.js"></script>
+
+</body>
+</html>

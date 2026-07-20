@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Customer Management</h2>
+
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="email" placeholder="Email">
+<input type="text" id="address" placeholder="Address">
+<input type="text" id="phone" placeholder="Phone">
+
+<button id="submitBtn" onclick="addCustomer()">Add Customer</button>
+
+<table id="customerTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="../js/api.js"></script>
+<script src="../js/customers.js"></script>
+
+</body>
+</html>

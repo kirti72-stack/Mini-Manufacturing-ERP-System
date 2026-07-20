@@ -1,0 +1,102 @@
+/* ===== COMMON BODY (ALL PAGES) ===== */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* ===== LOGIN PAGE ONLY ===== */
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box */
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+/* ===== FORM INPUTS ===== */
+input {
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 12px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 14px;
+
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* REMOVE BLUE EFFECT */
+button:hover {
+    background-color: #555;
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* ===== ERROR TEXT ===== */
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+}
+
+/* ===== LABEL ===== */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sale {
+    color: red;
+    font-weight: bold;
+}
+
+.purchase {
+    color: green;
+    font-weight: bold;
+}

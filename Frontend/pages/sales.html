@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h2>Sales Management</h2>
+
+<select id="productId">
+    <option value="">Select Product</option>
+</select>
+
+<select id="customerId">
+    <option value="">Select Customer</option>
+</select>
+<input type="number" id="quantity" placeholder="Quantity">
+<input type="number" id="price" placeholder="Price">
+
+<button onclick="addSale()">Add Sale</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product ID</th>
+            <th>Customer ID</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody id="salesTable"></tbody>
+</table>
+
+<script src="../js/api.js"></script>
+<script src="../js/sales.js"></script>
+
+</body>
+</html>
