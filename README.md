@@ -154,10 +154,6 @@ MySQL database contains the following tables:
 
 ---
 
-## Database
-
-![Database](Screenshots/database.png)
-
 ## How to Run
 
 1. Import the Spring Boot project into Eclipse.
