@@ -120,7 +120,7 @@ MySQL database contains the following tables:
 
 ## Supplier Management
 
-![Suppliers](Screenshots/suppliers.png)
+![Suppliers](Screenshots/supplier.png)
 
 ---
 
