@@ -92,6 +92,67 @@ MySQL database contains the following tables:
 - audit_logs
 
 ---
+# Project Screenshots
+
+## Login Page
+
+![Login](Screenshots/login.png)
+
+---
+
+## Dashboard
+
+![Dashboard](Screenshots/dashboard.png)
+
+---
+
+## Product Management
+
+![Products](Screenshots/products.png)
+
+---
+
+## Customer Management
+
+![Customers](Screenshots/customers.png)
+
+---
+
+## Supplier Management
+
+![Suppliers](Screenshots/suppliers.png)
+
+---
+
+## Purchase Management
+
+![Purchase](Screenshots/purchase.png)
+
+---
+
+## Sales Management
+
+![Sales](Screenshots/sales.png)
+
+---
+
+## Inventory Management
+
+![Inventory](Screenshots/inventory.png)
+
+---
+
+## Stock Movement
+
+![Stock Movement](Screenshots/stockmovement.png)
+
+---
+
+## Audit Logs
+
+![Audit Logs](Screenshots/auditlogs.png)
+
+---
 
 ## How to Run
 
